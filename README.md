@@ -43,7 +43,12 @@ on:
     branches: [ "main" ]
 
 jobs:
-  call-pipeline:
-    uses: codenest/reusable-java-pipelines/.github/workflows/java-ci.yml@main
+ #1 build 
+  build:
+    uses: codenest/reusable-java-pipelines/.github/workflows/build-pipeline.yml@main
     secrets:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+#2 docker
+needs: build
+uses: codenest/reusable-java-pipelines/.github/workflows/docker-deploy.yml@main
