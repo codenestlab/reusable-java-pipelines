@@ -49,6 +49,6 @@ jobs:
     secrets:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
-#2 docker
-needs: build
-uses: codenest/reusable-java-pipelines/.github/workflows/docker-deploy.yml@main
+ #2 docker
+    needs: build
+    uses: codenest/reusable-java-pipelines/.github/workflows/docker-deploy.yml@main
