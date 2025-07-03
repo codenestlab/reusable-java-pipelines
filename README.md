@@ -1,5 +1,8 @@
 # ☕ Reusable CI/CD Pipeline para Projetos Java
 
+<table> <tr> <td align="center"> <a href="https://github.com/AndressaFontes"> <img src="https://avatars.githubusercontent.com/AndressaFontes" width="100px;" alt="Foto da Andressa"/> <br /> <sub><b>Andressa Fontes</b></sub> </a> <br /> <a href="https://www.linkedin.com/in/andressa-fontes-3a5435277" target="_blank">🔗 LinkedIn</a> <br /> <a href="https://github.com/AndressaFontes" target="_blank">💻 GitHub</a> </td> </tr> </table>
+
+
 ## 📖 Sobre o Projeto
 
 Este repositório foi criado com o objetivo de **explorar e estudar pipelines CI/CD reutilizáveis com foco em projetos Java**, utilizando **GitHub Actions** e o recurso de **composição de workflows (`workflow_call`)**.
@@ -44,6 +47,3 @@ jobs:
     uses: codenest/reusable-java-pipelines/.github/workflows/java-ci.yml@main
     secrets:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-
-
-<table> <tr> <td align="center"> <a href="https://github.com/AndressaFontes"> <img src="https://avatars.githubusercontent.com/AndressaFontes" width="100px;" alt="Foto da Andressa"/> <br /> <sub><b>Andressa Fontes</b></sub> </a> <br /> <a href="https://www.linkedin.com/in/andressa-fontes-3a5435277" target="_blank">🔗 LinkedIn</a> <br /> <a href="https://github.com/AndressaFontes" target="_blank">💻 GitHub</a> </td> </tr> </table>
